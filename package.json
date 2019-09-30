@@ -1,0 +1,24 @@
+{
+  "name": "tic-tac-toe-game",
+  "version": "1.0.0",
+  "description": "Tit tac toe game is a finite-sum game played by two players",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simplemart17/Tic-Tac-Toe-Game.git"
+  },
+  "keywords": [
+    "game",
+    "player",
+    "computer"
+  ],
+  "author": "Martins Aloba",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Simplemart17/Tic-Tac-Toe-Game/issues"
+  },
+  "homepage": "https://github.com/Simplemart17/Tic-Tac-Toe-Game#readme"
+}
