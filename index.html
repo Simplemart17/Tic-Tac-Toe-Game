@@ -8,7 +8,42 @@
   <title>Tit Tac Toe Game</title>
 </head>
 <body>
-  <div>The Game Board</div>
+  <div class="game-title center">
+    <h1>Tit Tac Toe Game</h3>
+  </div>
+  <div class="start-btn">
+    <input id="btn-click" class="btn-btn" type="button" value="Start New Game" />
+  </div>
+  <div id="icon-modal" class="icon-modal">
+    <div class="modal-content center">
+      <h3>Select your favourite icon</h2>
+      <div class="game-icon">
+        <input type="radio" name="game-icon" value="O" id="o-icon" onclick="selectIcon(id)">
+        <label for="Circle">O</label>
+      </div>
+      <div class="game-icon">
+        <input type="radio" name="game-icon" value="X" id="x-icon" onclick="selectIcon(id)">
+        <label for="Star">X</label>
+      </div>
+      <!-- <div class="mt">
+        <input class="btn-btn" type="button" value="OK" onclick="selectIcon()">
+      </div> -->
+    </div>
+  </div>
+  <div class="game-area">
+    <div id="first" class="game-cell center" onclick="getValue(id)"></div>
+    <div class="game-cell center" onclick="getValue(id)"></div>
+    <div class="game-cell center" onclick="getValue(id)"></div>
+    <div class="game-cell center" onclick="getValue(id)"></div>
+    <div class="game-cell center" onclick="getValue(id)"></div>
+    <div class="game-cell center" onclick="getValue(id)"></div>
+    <div class="game-cell center" onclick="getValue(id)"></div>
+    <div class="game-cell center" onclick="getValue(id)"></div>
+    <div class="game-cell center" onclick="getValue(id)"></div>
+  </div>
+  <div class="mt center">
+    <input class="btn-btn" type="button" value="Reset Game" onclick="clearGame()">
+  </div>
   <script src="/script.js"></script>
 </body>
 </html>
