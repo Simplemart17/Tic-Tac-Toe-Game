@@ -4,45 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="/style.css">
   <title>Tit Tac Toe Game</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <div class="game-title center">
     <h1>Tit Tac Toe Game</h3>
   </div>
   <div class="start-btn">
-    <input id="btn-click" class="btn-btn" type="button" value="Start New Game" />
+    <input id="btn-start" class="btn-btn" type="button" value="Start New Game" />
   </div>
   <div id="icon-modal" class="icon-modal">
     <div class="modal-content center">
       <h3>Select your favourite icon</h2>
       <div class="game-icon">
-        <input type="radio" name="game-icon" value="O" id="o-icon" onclick="selectIcon(id)">
-        <label for="Circle">O</label>
+        <input type="radio" name="game-icon" id="o-icon" data-icon="O">
+        <label for="o-icon">O</label>
       </div>
       <div class="game-icon">
-        <input type="radio" name="game-icon" value="X" id="x-icon" onclick="selectIcon(id)">
-        <label for="Star">X</label>
+        <input type="radio" name="game-icon" id="x-icon" data-icon="X">
+        <label for="x-icon">X</label>
       </div>
-      <!-- <div class="mt">
-        <input class="btn-btn" type="button" value="OK" onclick="selectIcon()">
-      </div> -->
+      <div class="mt">
+        <input id="select-btn" class="btn-btn" type="button" value="OK">
+      </div>
     </div>
   </div>
   <div class="game-area">
-    <div id="first" class="game-cell center" onclick="getValue(id)"></div>
-    <div class="game-cell center" onclick="getValue(id)"></div>
-    <div class="game-cell center" onclick="getValue(id)"></div>
-    <div class="game-cell center" onclick="getValue(id)"></div>
-    <div class="game-cell center" onclick="getValue(id)"></div>
-    <div class="game-cell center" onclick="getValue(id)"></div>
-    <div class="game-cell center" onclick="getValue(id)"></div>
-    <div class="game-cell center" onclick="getValue(id)"></div>
-    <div class="game-cell center" onclick="getValue(id)"></div>
+    <div id="0" class="game-cell center"></div>
+    <div id="1" class="game-cell center"></div>
+    <div id="2" class="game-cell center"></div>
+    <div id="3" class="game-cell center"></div>
+    <div id="4" class="game-cell center"></div>
+    <div id="5" class="game-cell center"></div>
+    <div id="6" class="game-cell center"></div>
+    <div id="7" class="game-cell center"></div>
+    <div id="8" class="game-cell center"></div>
+  </div>
+  <div id="information-modal" class="information-modal">
+    <div class="modal-content center">
+      <h3 id="text"></h3>
+      <div class="mt">
+        <input id="close-btn" class="btn-btn" type="button" value="CLOSE">
+      </div>
+    </div>
   </div>
   <div class="mt center">
-    <input class="btn-btn" type="button" value="Reset Game" onclick="clearGame()">
+    <input id="reset-game"class="btn-btn" type="button" value="Reset Game" onclick="clearGame()">
   </div>
   <script src="/script.js"></script>
 </body>
