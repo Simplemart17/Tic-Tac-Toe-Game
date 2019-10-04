@@ -4,7 +4,8 @@
   "description": "Tit tac toe game is a finite-sum game played by two players",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d Game"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/Simplemart17/Tic-Tac-Toe-Game/issues"
   },
-  "homepage": "https://github.com/Simplemart17/Tic-Tac-Toe-Game#readme"
+  "homepage": "https://github.com/Simplemart17/Tic-Tac-Toe-Game#readme",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
 }
